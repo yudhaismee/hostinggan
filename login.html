@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+    <img src="/BLOG/assets/banner/loginbanner.jpeg">
+    <div class="form">
+        <h3 class="title">MASUK KE AKUN<br> BLOG KEREN</h3>
+        <form action="result.html" target="blank" method="GET" autocomplete="on" novalidate>
+            <!-- Name -->
+            <!--<label for="name">Name</label>-->
+            <input type="text" id="name" name="name" class="fieldinput" placeholder="Name" required>
+            <!-- Email -->
+            <!--<label for="email">Email</label>-->
+            <input type="text" id="email" name="email" class="fieldinput" placeholder="Email" required>
+            <!-- Address -->
+            <!--<label for="address">Address</label>-->
+            <textarea id="address" name="address" cols="30" rows="10" class="fieldinput" placeholder="Address" required></textarea>
+            <!-- Phone -->
+            <!--<label for="phone">Phone</label>-->
+            <input type="text" id="phone" name="phone" class="fieldinput" placeholder="Phone" required>
+            <!-- Kelas -->
+            <!--<label for="country">Kelas</label><br>-->
+            <select name="umur" id="umur" class="fieldinput" autofocus required>
+                <option value="kids">Kids (8-10 y)</option>
+                <option value="teens">Teens (11-13 y)</option>
+                <option value="highschool">High School (14-16 y)</option>
+                <option value="adult">Adult (17-21 y)</option>
+            </select><br>
+            <!-- Birthday -->
+            <label for="birthday">Birthday</label>
+            <input id="birthday" type="date" name="birthday" class="fieldinput" min="2000-01-01" max="2020-12-31" required>
+            <!-- Gender -->
+            <h3>Gender</h3>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label><br>
+            <!-- Documents Type -->
+            <h3>Documents Type</h3>
+            <input id="checkbox1" type="checkbox" name="document_type" value="studentcard">
+            <label for="checkbox1">Student Card</label>
+            <input id="checkbox2" type="checkbox" name="document_type" value="biodata">
+            <label for="checkbox2">Biodata</label>
+            <input id="checkbox3" type="checkbox" name="document_type" value="contractform">
+            <label for="checkbox3">Contract Form</label>
+            <!-- Upload Documents -->
+            <h3>Upload Documents</h3>
+            <input type="file" id="myFile" name="filename" multiple required>
+            <!-- Submit Button -->
+            <br><input type="submit" value="Submit" class="submit-btn"></br>
+        </form>
+    </div>
+</body>
+</html>
